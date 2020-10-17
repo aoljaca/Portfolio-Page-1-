@@ -1,0 +1,244 @@
+
+:root {
+  --main-white: #f0f0f0;
+  --main-red: #be3144;
+  --main-blue: #45567d;
+  --main-gray: #303841;
+}
+
+body {
+overflow-x: hidden;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: red;
+  font-size: 1rem;
+  margin-top: 70px;
+}
+
+#hey {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 2rem;
+  margin: 0 auto
+}
+
+#andrej {
+  margin-top: -105px;
+  padding-top: 170px;
+  margin-right: 400px;
+  margin-left: 400px;
+  margin-bottom: 70px;
+  text-align: center;
+  color: white;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
+
+#andrej-image {
+  position: relative;
+  height: 200px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+#navbar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: blue;
+  justify-content: flex-end;
+  z-index: 1
+}
+
+#border {
+  display: flex;
+  width: 500px;
+  border: 5px solid white;
+  border-radius: 50%
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 7rem;
+  list-style: none;
+}
+
+.nav-list a {
+  display: block;
+  font-size: 2.2rem;
+  padding: 2rem;
+  color: white;
+}
+
+#white
+ {
+  text-decoration: none;
+  color: var(--main-white);
+}
+
+.project-tile {
+  width: 250px;
+  height: 200px;
+  border: solid red 5px;
+  float: left
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
+  grid-gap: 6rem;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.btn-show-all {
+  font-size: 1.63rem;
+  background: red;
+  transition: background 0.3s ease-out;
+  padding: 10px;
+  text-aling: center;
+}
+
+.btn:hover {
+  background: blue;
+}
+
+header {
+  padding: 7rem;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.btn {
+  padding: 1rem;
+}
+
+.project-section {
+  padding: 2% 1%;
+}
+.project-section h2 {
+  text-align: center;
+}
+.project-section img{
+  margin-top: 10px
+}
+.projects-section-header {
+  max-width: 450px;
+  margin: 0 auto 3rem auto;
+  text-align: center;
+  border-bottom: 0.2rem solid red;
+  font-size: 2rem;
+  background: red;
+  color: pink;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 8vh;
+  font-size: 1.25rem;
+}
+
+.btn {
+  text-decoration: none;
+  color: red;
+}
+
+@media (max-width: 300.625em) {
+  #andrej {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+i {
+  margin-right: .25rem;
+}
+
+#contacts {
+  padding-bottom: 1rem;
+}
+
+  .holder {
+  /* Clip edges, as some of the lines don't terminate nicely. */
+  overflow: hidden;
+  position: absolute;
+  width: 2000px; 
+  height: 50px;
+  margin-top: 120px;
+  z-index: 0;
+  left: -10px;
+
+}
+
+.ellipse {
+  position: absolute;
+  background: radial-gradient(ellipse, transparent, transparent 7px, white 7px, white 10px, transparent 11px);
+  background-size: 36px 40px;
+  width: 5000px;
+  height: 20px;
+}
+
+.ellipse2 {
+  top: 20px;
+  left: 18px;
+  background-position: 0px -20px;
+}
+
+  img {
+    border-radius: 15%
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .nav-list a {
+  font-size: 1.5rem;
+}
+    .nav-list {
+  margin-right: 2rem;
+}
+    #andrej {
+      width: 300px
+    }
+    .projects-grid {
+      display: flex; 
+      flex-direction: column;
+      margin-left: 20%;
+    }
+    .projects-grid div:not(:first-child) {
+    margin-top: 25px
+}
+    .short{
+      margin-left: -90px
+    }
+    .super-long{
+      margin-left: -70px
+    }
+    .long {
+      margin-left: -83px
+    } 
+    #border {
+      width: 350px
+    }
+  }
+
+
+ 
